@@ -85,7 +85,7 @@ func ChanReadNil() {
 	fmt.Println(d)
 }
 
-// 写nil管道不会阻塞
+// 写nil管道会阻塞
 func ChanWriteNil() {
 	var ch chan int
 	ch <- 1
